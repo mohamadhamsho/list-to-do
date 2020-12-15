@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 500px;
+    margin: 50px auto;
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.list-title{
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+}
+.list-header{
+    background-color: #2e00d4;
+    padding: 10px 20px;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.list-header input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    outline: none;
+    border: none;
+    font-size: 17px;
+}
+.list-header input:focus,
+.list-header input::placeholder{
+    color: #2e00d4;
+}
+.list-header .icon{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    cursor: pointer;
+}
+.list-header .icon span{
+    display: inline-block;
+    width: 20px;
+    height: 3px;
+    background-color: #2e00d4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.list-header .icon span:first-child{
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+.list-body{
+    width: 100%;
+    background-color: #eee;
+    padding: 20px;
+}
+.empty-messege{
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    position: relative;
+    color: #555;
+    opacity: .8;
+}
+.list-body .task{
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    position: relative;
+    margin: 10px 0;
+}
+.list-body .task.finished{
+    text-decoration: line-through;
+}
+.list-body .task .delete-task{
+    position: absolute;
+    top:8px;
+    right: 15px;
+    text-align: right;
+    background-color: #ff0156;
+    padding: 3px 6px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.list-footer{
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    background-color: #eee;
+}
+.list-footer .tasks-nomber{
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+}
+.list-footer .tasks-nomber span{
+    background-color: #ff0156;
+    padding: 2px 4px;
+    font-size: 11px;
+    color: #fff;
+    border-radius: 5px;
+}
+.list-footer .tasks-completed{
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 3px;
+}
+.list-footer .tasks-completed span{
+    background-color: #016fff;
+    padding: 2px 4px;
+    font-size: 11px;
+    color: #fff;
+    border-radius: 5px;
+}
